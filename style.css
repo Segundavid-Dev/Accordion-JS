@@ -77,7 +77,6 @@ img {
 
 .accordion--main {
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .accordion--main:hover {
@@ -95,6 +94,16 @@ img {
   width: 30px;
 }
 
+.accordion--panel {
+  transition: 0.3s ease;
+}
+
 .hidden {
   display: none;
+  transition: 0.5s ease-in;
+}
+
+.show {
+  display: block;
+  transition: 0.5s ease-in;
 }
