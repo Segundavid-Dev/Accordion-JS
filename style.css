@@ -1,4 +1,14 @@
-* {
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 40%);
+  --Dark-purple: hsl(292, 42%, 14%);
+  --font-small: 14px;
+}
+
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,6 +19,26 @@
   font-family: "Work Sans";
   src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
 }
+
 body {
   font-family: "Work Sans";
+  font-size: 1rem;
+  margin-inline: auto;
+  max-width: 1440px;
+}
+
+p {
+  font-size: var(--font-small);
+  color: var(--Grayish-purple);
+}
+
+.container {
+  margin: 0 3rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
 }
