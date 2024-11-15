@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
 :root {
   --white: hsl(0, 0%, 100%);
   --light-pink: hsl(275, 100%, 97%);
   --Grayish-purple: hsl(292, 16%, 40%);
   --Dark-purple: hsl(292, 42%, 14%);
   --font-small: 14px;
+  --font-family: "League Spartan", serif;
 }
 
 *,
@@ -14,17 +17,12 @@
   box-sizing: border-box;
 }
 
-/* Add font file locally */
-@font-face {
-  font-family: "Work Sans";
-  src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
-}
-
+/* General styling */
 body {
-  font-family: "Work Sans";
+  font-family: var(--font-family);
   font-size: 1rem;
-  margin-inline: auto;
-  max-width: 1440px;
+  background-color: var(--light-pink);
+  line-height: 1.5;
 }
 
 p {
@@ -32,13 +30,71 @@ p {
   color: var(--Grayish-purple);
 }
 
+h1 {
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.responsive-wrapper {
+  margin: 0 5vw;
+}
 .container {
-  margin: 0 3rem;
-  /* display: flex;
-  flex-direction: column;
+  max-width: 600px;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: -10rem;
+  margin-inline: auto;
+}
+
+.header-img {
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  height: 40vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headder--content {
+  display: flex;
   align-items: center;
-  justify-content: center; */
-  height: 100vh;
-  max-width: 800px;
-  margin: 0 auto;
+  vertical-align: middle;
+  padding-bottom: 1rem;
+}
+
+.headder--content img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.accordion--main {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.accordion--main:hover {
+  color: var(--Dark-purple);
+}
+.accordion--heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding-bottom: 2rem;
+}
+
+.accordion--heading img {
+  width: 30px;
+}
+
+.hidden {
+  display: none;
 }
