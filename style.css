@@ -4,7 +4,7 @@
   --white: hsl(0, 0%, 100%);
   --light-pink: hsl(275, 100%, 97%);
   --Grayish-purple: hsl(292, 16%, 40%);
-  --Dark-purple: hsl(292, 42%, 14%);
+  --Dark-purple: hsl(300, 100%, 25%);
   --font-small: 14px;
   --font-family: "League Spartan", serif;
 }
@@ -102,8 +102,5 @@ img {
 
 .show {
   display: block;
+  transition: 500ms ease-in;
 }
-
-/* .minus--svg {
-  display: none;
-} */
